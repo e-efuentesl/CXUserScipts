@@ -1,3 +1,16 @@
+// ==UserScript==
+// @name         Copiar Tabla desde SPFin
+// @namespace    *
+// @version      0.1
+// @description  Try to copy Data
+// @author       You
+// @match        *://memsim.cenace.gob.mx/*/TransaccionesBilaterales/*
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
 document.getElementsByClassName("panel-title")[2].onclick = function(){copy_data()}	
 function copy_data(){
 const btn = document.createElement("button");
@@ -24,3 +37,7 @@ document.execCommand('copy');
 el.hidden = true;
 alert("Tabla Copiada")
 }
+
+
+    // Your code here...
+})();
