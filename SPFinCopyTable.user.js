@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         Copiar Tabla desde SPFin
 // @namespace    *
-// @version      0.1
+// @version      0.2
 // @description  Try to copy Data
 // @author       You
 // @match        *://memsim.cenace.gob.mx/*/TransaccionesBilaterales/*
 // @grant        none
+// @UpdateURL    https://github.com/e-efuentesl/CXUserScipts/raw/master/SPFinCopyTable.user.js
 // ==/UserScript==
 
 (function() {
