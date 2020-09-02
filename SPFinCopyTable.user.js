@@ -19,13 +19,13 @@ const btn = document.createElement("button");
 var nodes = [].slice.call(document.getElementsByTagName("input"));
 var th_text = [].slice.call(document.getElementsByTagName("th")); 
 
-data = [];
+var data = [];
 
 nodes.forEach(function(e){if(e.name.endsWith(".VALOR")){data.push(e)}});
 
 const el = document.createElement('textarea');
 var texto = "";
-var texto = th_text[0].innerText+"\t"+th_text[1].innerText+"\n";
+texto = th_text[0].innerText+"\t"+th_text[1].innerText+"\n";
 el.value = texto;
 document.body.appendChild(el);
 
