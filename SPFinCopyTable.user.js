@@ -39,6 +39,5 @@ el.hidden = true;
 alert("Tabla Copiada")
 }
 
-
     // Your code here...
 })();
