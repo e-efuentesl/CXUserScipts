@@ -13,7 +13,7 @@
     'use strict';
 
     var aTags = document.getElementsByClassName("panel-title");
-    var searchText = "PerfilHorario";
+    var searchText = "Perfil Horario";
     var element;
 
     for (var i = 0; i < aTags.length; i++) {
