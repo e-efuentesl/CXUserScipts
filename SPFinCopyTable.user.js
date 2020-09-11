@@ -12,8 +12,18 @@
 (function() {
     'use strict';
 
+    var aTags = document.getElementsByClassName("panel-title");
+    var searchText = "PerfilHorario";
+    var element;
 
-document.getElementsByClassName("panel-title")[2].innerHTML = "Perfil Horario"+"  <div class='copy-table btn btn-danger' onclick='copy_data();'>Copiar Datos</div>";
+    for (var i = 0; i < aTags.length; i++) {
+        if (aTags[i].textContent == searchText) {
+            element = aTags[i];
+            break;
+        }
+    }
+
+element.innerHTML = "Perfil Horario"+"  <div class='copy-table btn btn-danger' onclick='copy_data();'>Copiar Datos</div>";
 //document.getElementsByClassName("copy-table")[2].onclick = function(){copy_data()}	
 function copy_data(){
 const btn = document.createElement("button");
