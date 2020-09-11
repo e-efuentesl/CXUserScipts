@@ -12,7 +12,9 @@
 (function() {
     'use strict';
 
-document.getElementsByClassName("panel-title")[2].onclick = function(){copy_data()}	
+
+document.getElementsByClassName("panel-title")[2].innerText = "Perfil Horario"+"<div class='copy-table btn btn-danger'>Copiar Datos</div>";
+document.getElementsByClassName("copy-table")[2].onclick = function(){copy_data()}	
 function copy_data(){
 const btn = document.createElement("button");
 
