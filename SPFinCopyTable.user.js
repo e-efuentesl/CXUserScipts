@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SPFin Copy Table
 // @namespace    *
-// @version      0.7
+// @version      0.9
 // @description  Try to copy Data
 // @author       You
 // @match        *://memsim.cenace.gob.mx/*/TransaccionesBilaterales/*
