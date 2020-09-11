@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SPFin Copy Table
 // @namespace    *
-// @version      0.5
+// @version      0.7
 // @description  Try to copy Data
 // @author       You
 // @match        *://memsim.cenace.gob.mx/*/TransaccionesBilaterales/*
@@ -13,7 +13,7 @@
     'use strict';
 
 
-document.getElementsByClassName("panel-title")[2].innerHTML = "Perfil Horario"+"  <div class='copy-table btn btn-danger' onclick='function(){copy_data()}'>Copiar Datos</div>";
+document.getElementsByClassName("panel-title")[2].innerHTML = "Perfil Horario"+"  <div class='copy-table btn btn-danger' onclick='copy_data();'>Copiar Datos</div>";
 //document.getElementsByClassName("copy-table")[2].onclick = function(){copy_data()}	
 function copy_data(){
 const btn = document.createElement("button");
