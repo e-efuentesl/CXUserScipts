@@ -23,7 +23,7 @@
         }
     }
 
-element.innerHTML = "Perfil Horario"+"  <div class='copy-table btn btn-danger'>Copiar Datos</div>";
+element.innerHTML = "Perfil Horario"+"  <div style='font-size:10px;' class='copy-table btn btn-danger'>Copiar Datos</div>";
 document.getElementsByClassName("copy-table")[0].onclick = function(){copy_data()}	
 function copy_data(){
 const btn = document.createElement("button");
