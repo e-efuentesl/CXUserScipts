@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SPFin Copy Table
 // @namespace    *
-// @version      1.5
+// @version      1.8
 // @description  Try to copy Data
 // @author       You
 // @match        *://memsim.cenace.gob.mx/*/TransaccionesBilaterales/*
@@ -10,7 +10,6 @@
 // ==/UserScript==
 
 (function() {
-	
 	var element;
 	
 	function findByElement(cName,cContent){
@@ -25,7 +24,7 @@
 		return element
 	}
 	
-	element = function('panel-title','Perfil Horario'
+	element = findByElement('panel-title','Perfil Horario');
 	
 	element.innerHTML = "Perfil Horario"+"  <div style='font-size:10px;' class='copy-table btn btn-danger'>Copiar Datos</div>";
 	
@@ -67,7 +66,7 @@
 		//nodes.forEach(function(e){if(e.name.endsWith(".VALOR")){data.push(e)}});
 
 		const el = document.createElement('textarea');
-		texto = th_text[0].innerText+"\t"+th_text[1].innerText+"\n";
+		//texto = th_text[0].innerText+"\t"+th_text[1].innerText+"\n";
 		el.value = texto;
 		document.body.appendChild(el);
 
